@@ -132,4 +132,5 @@ CASE WHEN continent = 'Oceania' THEN 'Australasia'
      WHEN continent = 'Caribbean' AND name NOT LIKE 'b%' THEN 'South America'
      ELSE continent END
 FROM world
+WHERE tld IN ('.ag','.ba','.bb','.ca','.cn','.nz','.ru','.tr','.uk')
 ORDER BY name
